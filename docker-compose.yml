@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  whisper-api:
+    image: 214882929820.dkr.ecr.us-east-1.amazonaws.com/whisper_ft:v1.0.1
+    ports:
+      - "8000:8000" # expose port of your choice
+    environment:
+      MODEL_NAME: large-v3-turbo
+      UVICORN_WORKERS: 2
+    runtime: nvidia  # required for GPU use if using nvidia-docker2
