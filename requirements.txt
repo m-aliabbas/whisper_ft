@@ -4,3 +4,4 @@ soundfile
 torch
 faster-whisper
 python-multipart
+scipy
