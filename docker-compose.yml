@@ -1,6 +1,6 @@
 services:
   whisper-api:
-    image: 214882929820.dkr.ecr.us-east-1.amazonaws.com/whisper_ft:v1.0.3
+    image: 214882929820.dkr.ecr.us-east-1.amazonaws.com/whisper_ft:v1.0.4
     ports:
       - "8000:8000"
     environment:

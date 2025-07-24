@@ -12,8 +12,9 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir --break-system-packages -r requirements.txt
 
+
 # Copy application code
-COPY app /app
+COPY app/dist /app
 
 # Expose app port
 EXPOSE 8000
